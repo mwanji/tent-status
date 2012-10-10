@@ -37,7 +37,7 @@
   {{#repost}}
   <div class="span560 repost no-offset">{{> _post_inner}}</div>
   <div class="span6 offset1">Reposted by {{parent.name}}</div>
-  <small class="showOnHover pull-right">via {{parent.app.name}}</small>
+  <small class="showOnHover pull-right">via <a href="{{parent.app.url}}">{{parent.app.name}}</a></small>
   {{/repost}}
 </div>
 
@@ -67,7 +67,7 @@
 
   {{^repost}}
   {{^has_parent}}
-  <small class="pull-right">via {{app.name}}</small>
+  <small class="pull-right">via <a href="{{app.url}}">{{app.name}}</a></small>
   {{/has_parent}}
   {{/repost}}
 </div>
